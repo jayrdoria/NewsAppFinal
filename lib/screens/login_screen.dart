@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:newsapp/screens/home/home_screen.dart';
 import 'package:newsapp/screens/registration_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:newsapp/screens/reset_password.dart';
+import 'package:newsapp/screens/splash_screens/login_splash_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -60,12 +61,12 @@ class _LoginScreenState extends State<LoginScreen> {
         controller: passwordController,
         obscureText: _obscureText,
         validator: (value) {
-          RegExp regex = new RegExp(r'^.{6,}$');
+          RegExp regex = new RegExp(r'^.{8,}$');
           if (value!.isEmpty) {
             return ("Password is required for login");
           }
           if (!regex.hasMatch(value)) {
-            return ("Enter Valid Password(Min. 6 Character)");
+            return ("Enter Valid Password(Min. 8 Characters)");
           }
         },
         textInputAction: TextInputAction.done,
@@ -80,8 +81,8 @@ class _LoginScreenState extends State<LoginScreen> {
               });
             },
             child: Icon(_obscureText
-                ? Icons.visibility
-                : Icons.visibility_off),
+                ? Icons.visibility_off
+                : Icons.visibility),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -163,6 +164,29 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 15),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        ResetScreen()));
+                          },
+                          child: Text(
+                            "Forgot Password?",
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
@@ -179,8 +203,7 @@ class _LoginScreenState extends State<LoginScreen> {
       await _auth
           .signInWithEmailAndPassword(email: email, password: password)
           .then((uid) => {
-            Fluttertoast.showToast(msg: "Login Successful"),
-            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen())),
+            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginSplashScreen())),
       }).catchError((e)
       {
           Fluttertoast.showToast(msg: e!.message);

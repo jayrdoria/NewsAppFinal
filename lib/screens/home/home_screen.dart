@@ -3,6 +3,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:newsapp/screens/home/components/body.dart';
 import 'package:newsapp/screens/location_preference/location_preference_buttons.dart';
 import 'package:newsapp/screens/settings_screen.dart';
+import 'package:newsapp/screens/source/source_buttons.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -24,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
     Body(),
     LocationButtons(),
+    SourceButtons(),
     SettingsScreen(),
   ];
 
@@ -53,6 +55,10 @@ class _HomeScreenState extends State<HomeScreen> {
               GButton(
                 icon: Icons.location_pin,
                 text: "Location Preference",
+              ),
+              GButton(
+                icon: Icons.source,
+                text: "Sources",
               ),
               GButton(
                 icon: Icons.settings,

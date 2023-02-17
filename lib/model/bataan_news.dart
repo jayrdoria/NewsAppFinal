@@ -18,6 +18,106 @@ class BataanNewsModel{
 List<BataanNewsModel> bataannews = [
 
   BataanNewsModel(
+    id: 5,
+    source: "Manila Bulletin",
+    author: "Liezle Basa Iñigo",
+    title: "Farmers in Bataan withdraw support to NPA",
+    description: "CAMP AQUINO, Tarlac City – Seventy-six members of the underground mass "
+        "organization Alyansa ng Magbubukid ng Gitnang Luzon (AMGL)-Bataan chapter withdrew "
+        "their support to the New People’s Army in a ceremony in Barangay Pentor, Dinalupihan, "
+        "Bataan last Friday, Dec. 9. Ka Maxene, a former AMGL member, they will form a new "
+        "organization free of communist deception and call it Malaya at Nagkakaisang Samahan ng Bataan.",
+    url: "https://mb.com.ph/2022/12/11/farmers-in-bataan-withdraw-support-to-npa/",
+    img: "assets/img/Bataan_54.jpg",
+    date: "December 11, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
+    id: 4,
+    source: "Manila Bulletin",
+    author: "Jun Marcos Tadios",
+    title: "DPWH improves tourism channels to Bataan",
+    description: "A recently completed 988.41-lineal meter section of a local road in "
+        "the town of Dinalupihan will bolster the tourist arrivals in the province of Bataan, "
+        "the Department of Public Works and Highways (DPWH) said on Sunday, Dec. 11. The "
+        "completion of the local road in Barangay Pita, Dinalupihan, Bataan, will make it easier "
+        "for tourists and residents to get to the Dinalupihan Agro Tourism Area, according to "
+        "Bataan 1st District Engineering Office (DEO).",
+    url: "https://mb.com.ph/2022/12/11/dpwh-improves-tourism-channels-to-bataan/",
+    img: "assets/img/Bataan_53.jpg",
+    date: "December 11, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
+    id: 3,
+    source: "GMA News Online",
+    author: "Mel Matthew Doctor",
+    title: "Public school teacher, patay; 2 sugatan, sa salpukan ng kotse at fuel tanker sa Bataan",
+    description: "Nasawi ang isang public school teacher habang dalawa naman ang sugatan "
+        "sa banggaaan ng kotse at fuel tanker sa Orani, Bataan. Sa ulat ni Dano Tingcungco "
+        "sa “24 Oras Weekend”, kinilala ang biktima na si Aileen Dulay, na kasama ang "
+        "kanyang mister at 4-taong-gulang na anak nang mangyari ang aksidente sa Roman Super "
+        "Highway. Wasak nang naabutan ng rescuers ang sasakyan nila Dulay habang nasa harapan "
+        "nito ang nakabanggaang fuel tanker.",
+    url: "https://www.gmanetwork.com/news/balitambayan/balita/854176/public-school-teacher-patay-2-sugatan-sa-salpukan-ng-kotse-at-fuel-tanker-sa-bataan/story/",
+    img: "assets/img/Bataan_52.jpg",
+    date: "Disyembre 11, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
+    id: 15,
+    source: "Manila Bulletin",
+    author: "Jun Marcos Tadios",
+    title: "DPWH improves road accessibility in Bataan to support local farmers",
+    description: "A 542.6-linear meter road in Hermosa, Bataan has been completed and "
+        "is now ready to serve local farmers easing the mobility of their goods and "
+        "local products, the Department of Public Works and Highways (DPWH) announced on "
+        "Tuesday, Dec. 6. Bataan 1st District Engineer Erlindo R. Flores, Jr. said the "
+        "concreting project with P4.9 million funding under the supervision of DPWH 1st "
+        "District Engineering Office (DEO).",
+    url: "https://mb.com.ph/2022/12/06/dpwh-improves-road-accessibility-in-bataan-to-support-local-farmers/",
+    img: "assets/img/Bataan_44.jpg",
+    date: " December 6, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
+    id: 14,
+    source: "Manila Bulletin",
+    author: "Ellson Quismorio",
+    title: "Bataan solon moves to start 2nd phase of agrarian reform program",
+    description: "Bataan 1st district Rep. Geraldine Roman is pushing for legislation that "
+        "would complete the Comprehensive Agrarian Reform Program (CARP) by facilitating its "
+        "second phase. House Bill (HB) No.223, which Roman filed, institutes the second phase "
+        "of the CARP, which includes the distribution of fully-subsidized agricultural lands "
+        "to qualified agrarian reform beneficiaries (ARBs).",
+    url: "https://mb.com.ph/2022/12/06/bataan-solon-moves-to-start-2nd-phase-of-agrarian-reform-program/",
+    img: "assets/img/Bataan_43.jpg",
+    date: " December 6, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
+    id: 16,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin",
+    title: "Vista Estates’ new micro-city in Bataan steers the focus onto living green",
+    description: "Vista Land, the country’s largest integrated property developer, has "
+        "been on the sustainability bandwagon for years. The company’s “sustainability” "
+        "mind-shift is not just a department with a set of programs, but a way of thinking, "
+        "operating, and more importantly––building. This green mindset is deeply integrated "
+        "into the masterplanning and development of a residential, business, and commercial "
+        "complex that makes full use of the advantages the province offers, in this case, Bataan.",
+    url: "https://mb.com.ph/2022/12/01/vista-estates-new-micro-city-in-bataan-steers-the-focus-onto-living-green/",
+    img: "assets/img/Bataan_45.jpg",
+    date: "December 1, 2022",
+    province: "Bataan",
+  ),
+
+  BataanNewsModel(
     id: 40,
     source: "GMA News",
     author: "Giselle Ombay",

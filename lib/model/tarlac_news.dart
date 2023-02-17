@@ -18,6 +18,41 @@ class TarlacNewsModel{
 List<TarlacNewsModel> tarlacnews = [
 
   TarlacNewsModel(
+    id: 10,
+    source: "Manila Bulletin",
+    author: "Rey Panaligan ",
+    title: "SC issues protection order to 2 missing activists, community organizers in Tarlac",
+    description: "The Supreme Court (SC) has issued temporary protection order (TPO) for two "
+        "activists and community organizers who have been reported missing since last July 3 "
+        "and allegedly in the custody of either the police or the military. In a Writ of "
+        "Amparo issued last Nov. 29 and made public on Friday, Dec. 9, the TPO was also issued "
+        "for the families of Ma. Elena “Cha” Cortez Pampoza of Anakpawis and Elgene “Leleng” "
+        "Mungcal of Gabriela Women’s Partylist.",
+    url: "https://mb.com.ph/2022/12/09/sc-issues-protection-order-to-2-missingactivists-community-organizers-in-tarlac/",
+    img: "assets/img/Tarlac_39.jpg",
+    date: "December 9, 2022",
+    province: "Tarlac",
+  ),
+
+  TarlacNewsModel(
+    id: 11,
+    source: "Manila Bulletin",
+    author: "Liezle Basa Iñigo",
+    title: "58 law breakers arrested in weeklong anti-criminality operations in Tarlac",
+    description: "CAMP FRANCISCO S. MACABULOS, Tarlac City – The Tarlac Police apprehended "
+        "58 law breakers during their anti-criminality campaign in Tarlac Province from Nov. "
+        "28 to Dec. 4, 2022. Out of the 58 arrested, 32 were wanted persons (including two "
+        "provincial most wanted persons) for the crimes of rape, theft, qualified theft, "
+        "violations of special laws and municipal ordinance. Sixteen individuals were arrested "
+        "during anti-illegal drug operations resulting in the confiscation of a total of 57 "
+        "plastic sachets containing suspected shabu.",
+    url: "https://mb.com.ph/2022/12/06/58-law-breakers-arrested-in-weeklong-anti-criminality-operations-in-tarlac/",
+    img: "assets/img/Tarlac_40.jpg",
+    date: "December 6, 2022",
+    province: "Tarlac",
+  ),
+
+  TarlacNewsModel(
     id: 11,
     source: "Manila Bulletin",
     author: "Liezle Basa Iñigo",

@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:native_notify/native_notify.dart';
-import 'package:newsapp/screens/login_screen.dart';
+import 'package:newsapp/screens/splash_screens/opening_splash_screen.dart';
 
 Future <void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       //change to LoginScreen() if the app is finish
-      home: LoginScreen(),
+      home: OpeningSplashScreen(),
     );
   }
 }

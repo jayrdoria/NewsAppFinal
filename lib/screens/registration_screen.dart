@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:newsapp/screens/login_screen.dart';
+import 'package:newsapp/screens/splash_screens/signup_splash_screen.dart';
 
 import '../model/user_model.dart';
 
@@ -131,20 +132,24 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               });
             },
             child: Icon(_obscureText
-                ? Icons.visibility
-                : Icons.visibility_off),
+                ? Icons.visibility_off
+                : Icons.visibility),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),
         ),
         validator: (value) {
-          RegExp regex = new RegExp(r'^.{6,}$');
+          RegExp regex = new RegExp(r'^.{8,}$');
           if (value!.isEmpty) {
             return ("Password is required for login");
           }
           if (!regex.hasMatch(value)) {
-            return ("Enter Valid Password(Min. 6 Character)");
+            return ("Recommendations to make your password stronger:"
+                "\n1. Make it atleast 8 characters"
+                "\n2. Add uppercase letters"
+                "\n3. Add numbers"
+                "\n4. Add punctuations");
           }
         },
         onSaved: (value) {
@@ -169,8 +174,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               });
             },
             child: Icon(_obscureText2
-                ? Icons.visibility
-                : Icons.visibility_off),
+                ? Icons.visibility_off
+                : Icons.visibility),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -203,7 +208,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           signUp(emailEditingController.text, passwordEditingController.text);
         },
         child: Text(
-          "SignUp",
+          "Sign Up",
           textAlign: TextAlign.center,
           style: TextStyle(
               fontSize: 20,
@@ -297,11 +302,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         .collection("users")
         .doc(user.uid)
         .set(userModel.toMap());
-    Fluttertoast.showToast(msg: "Account created successfully :) ");
 
     Navigator.pushAndRemoveUntil(
         (context),
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(builder: (context) => SignUpSplashScreen()),
             (route) => false);
   }
 }

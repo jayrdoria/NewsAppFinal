@@ -17,6 +17,350 @@ class NewsModel{
 List<NewsModel> news = [
 
   NewsModel(
+    id: 6,
+    source: "Philippine Star",
+    author: "The Philippine Star",
+    title: "Wilcon Depot opens third Nueva Ecija store",
+    description: "MANILA, Philippines — Wilcon Depot, the top home improvement and building "
+        "supplies retailer in the Philippines, continues to expand its physical store presence "
+        "nationwide and successfully launched its 82nd store in San Jose, Nueva Ecija last Dec. 9. "
+        "The one-stop-shop is located in Zone 1, Barangay Manicla, San Jose City, Nueva Ecija.",
+    url: "https://www.philstar.com/headlines/2022/12/11/2229991/wilcon-depot-opens-third-nueva-ecija-store",
+    img: "assets/img/Nueva Ecija_55.jpg",
+    date: "December 11, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NewsModel(
+    id: 2,
+    source: "GMA News Online",
+    author: "GMA Integrated News",
+    title: "Rosal traverses Philippine Sea, may bring heavy rains over Mimaropa",
+    description: "Tropical Depression Rosal continued traversing the Philippine Sea east of "
+        "Aurora on Sunday, maintaining its strength, and may bring light to moderate with at "
+        "times heavy rains over Mimaropa until noon, PAGASA said in its bulletin. Flooding and "
+        "rain-induced landslides are still possible in some areas, especially in areas that are "
+        "highly or very highly susceptible to these hazard as identified in hazard maps and in "
+        "localities with significant antecedent rainfall, the weather bureau said.",
+    url: "https://www.gmanetwork.com/news/scitech/weather/854131/rosal-traverses-philippine-sea-may-bring-heavy-rains-over-mimaropa/story/",
+    img: "assets/img/Aurora_51.jpg",
+    date: "December 11, 2022",
+    province: "Aurora",
+  ),
+
+  NewsModel(
+    id: 5,
+    source: "Manila Bulletin",
+    author: "Liezle Basa Iñigo",
+    title: "Farmers in Bataan withdraw support to NPA",
+    description: "CAMP AQUINO, Tarlac City – Seventy-six members of the underground mass "
+        "organization Alyansa ng Magbubukid ng Gitnang Luzon (AMGL)-Bataan chapter withdrew "
+        "their support to the New People’s Army in a ceremony in Barangay Pentor, Dinalupihan, "
+        "Bataan last Friday, Dec. 9. Ka Maxene, a former AMGL member, they will form a new "
+        "organization free of communist deception and call it Malaya at Nagkakaisang Samahan ng Bataan.",
+    url: "https://mb.com.ph/2022/12/11/farmers-in-bataan-withdraw-support-to-npa/",
+    img: "assets/img/Bataan_54.jpg",
+    date: "December 11, 2022",
+    province: "Bataan",
+  ),
+
+  NewsModel(
+    id: 4,
+    source: "Manila Bulletin",
+    author: "Jun Marcos Tadios",
+    title: "DPWH improves tourism channels to Bataan",
+    description: "A recently completed 988.41-lineal meter section of a local road in "
+        "the town of Dinalupihan will bolster the tourist arrivals in the province of Bataan, "
+        "the Department of Public Works and Highways (DPWH) said on Sunday, Dec. 11. The "
+        "completion of the local road in Barangay Pita, Dinalupihan, Bataan, will make it easier "
+        "for tourists and residents to get to the Dinalupihan Agro Tourism Area, according to "
+        "Bataan 1st District Engineering Office (DEO).",
+    url: "https://mb.com.ph/2022/12/11/dpwh-improves-tourism-channels-to-bataan/",
+    img: "assets/img/Bataan_53.jpg",
+    date: "December 11, 2022",
+    province: "Bataan",
+  ),
+
+  NewsModel(
+    id: 3,
+    source: "GMA News Online",
+    author: "Mel Matthew Doctor",
+    title: "Public school teacher, patay; 2 sugatan, sa salpukan ng kotse at fuel tanker sa Bataan",
+    description: "Nasawi ang isang public school teacher habang dalawa naman ang sugatan "
+        "sa banggaaan ng kotse at fuel tanker sa Orani, Bataan. Sa ulat ni Dano Tingcungco "
+        "sa “24 Oras Weekend”, kinilala ang biktima na si Aileen Dulay, na kasama ang "
+        "kanyang mister at 4-taong-gulang na anak nang mangyari ang aksidente sa Roman Super "
+        "Highway. Wasak nang naabutan ng rescuers ang sasakyan nila Dulay habang nasa harapan "
+        "nito ang nakabanggaang fuel tanker.",
+    url: "https://www.gmanetwork.com/news/balitambayan/balita/854176/public-school-teacher-patay-2-sugatan-sa-salpukan-ng-kotse-at-fuel-tanker-sa-bataan/story/",
+    img: "assets/img/Bataan_52.jpg",
+    date: "Disyembre 11, 2022",
+    province: "Bataan",
+
+  ),
+
+  //upper news are latest
+
+  NewsModel(
+    id: 1,
+    source: "SunStar Pampanga",
+    author: "CHARLENE A. CAYABYAB",
+    title: "CIAC to oversee Clark airport operations",
+    description: "CLARK FREEPORT The Department of Transportation (DOTR) recently tasked "
+        "the Clark International Airport Corporation (CIAC) to exercise oversight functions "
+        "of the privately-run Clark International Airport. This was revealed by CIAC officer-in-charge "
+        "Darwin Cunanan citing a directive from Transportation Secretary Jaime Bautista "
+        "dated November 7, 2022. As its implementing arm, DOTR is ordering CIAC to exercise "
+        "“regulatory supervision and oversight of activities occurring within the Clark Civil "
+        "Aviation Complex, including CRK.” CRK is the code used by the International Air Transport "
+        "Association for the Clark International Airport. Bautista’s directive to Cunanan was "
+        "also sent to Chairman Delfin Lorenzana and President Aileen Zosa of the Bases Conversion "
+        "and Development Authority, CIAC’s parent company.",
+    url: "https://www.sunstar.com.ph/article/1948085/pampanga/local-news/ciac-to-oversee-clark-airport-operations",
+    img: "assets/img/Pampanga_30.jpg",
+    date: "December 09, 2022",
+    province: "Pampanga",
+  ),
+
+  NewsModel(
+    id: 10,
+    source: "Manila Bulletin",
+    author: "Rey Panaligan ",
+    title: "SC issues protection order to 2 missing activists, community organizers in Tarlac",
+    description: "The Supreme Court (SC) has issued temporary protection order (TPO) for two "
+        "activists and community organizers who have been reported missing since last July 3 "
+        "and allegedly in the custody of either the police or the military. In a Writ of "
+        "Amparo issued last Nov. 29 and made public on Friday, Dec. 9, the TPO was also issued "
+        "for the families of Ma. Elena “Cha” Cortez Pampoza of Anakpawis and Elgene “Leleng” "
+        "Mungcal of Gabriela Women’s Partylist.",
+    url: "https://mb.com.ph/2022/12/09/sc-issues-protection-order-to-2-missingactivists-community-organizers-in-tarlac/",
+    img: "assets/img/Tarlac_39.jpg",
+    date: "December 9, 2022",
+    province: "Tarlac",
+  ),
+
+  NewsModel(
+    id: 12,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin Sports",
+    title: "Nueva Ecija seeks title sweep over Zamboanga in Game 3",
+    description: "Nueva Ecija seeks a sweep as Zamboanga Family’s Brand Sardines fights "
+        "for life in Game 3 of the OKbet-MPBL (Maharlika Pilipinas Basketball League) 4th "
+        "Season Presented by Xtreme National Finals on Friday, Dec. 9, at the Mayor Vitaliano "
+        "Agan Coliseum in Zamboanga City. The Nueva Ecija Rice Vanguards thwarted the Zamboanguenos, "
+        "81-75, in Game 1, and 75-74 in Game 2, both at the Nueva Ecija Coliseum, to move within "
+        "a win of completing a brilliant run that saw them sweep the elimination round and capture "
+        "the North division title. Zamboanga, however, has proven to be no pushover and is sure "
+        "to pour everything to give joy to the hometown crowd.",
+    url: "https://mb.com.ph/2022/12/08/nueva-ecija-seeks-title-sweep-over-zamboanga-in-game-3/",
+    img: "assets/img/Nueva Ecija_41.jpg",
+    date: " December 8, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NewsModel(
+    id: 9,
+    source: "INQUIRER.NET",
+    author: " Tonette Orejas",
+    title: "Pampanga governor is Converge FiberXer’s new team manager",
+    description: "CITY OF SAN FERNANDO—Pampanga Gov. Dennis Pineda has confirmed that "
+        "he has accepted to help Converge FiberXers as team manager for the third conference "
+        "of the Philippine Basketball Association’s (PBA) 47th season. Pineda assured that his "
+        "official duties as Pampanga governor would not be affected, attributing that to his disciplined ways.",
+    url: "https://sports.inquirer.net/489281/pampanga-governor-is-converge-fiberxers-new-team-manager",
+    img: "assets/img/Pampanga_38.jpg",
+    date: "December 08, 2022",
+    province: "Pampanga",
+  ),
+
+  NewsModel(
+    id: 5,
+    source: "Gma News Online",
+    author: "GMA Integrated News",
+    title: "Gradual sinking of barangay in Bulacan possibly caused by climate change",
+    description: "Barangay Taliptip in Bulakan, Bulacan may be providing a preview of things "
+        "to come in other coastal areas in the country including Manila due to climate change. "
+        "According to Joseph Morong’s special report on “24 Oras”, residents in the barangay "
+        "are wary of the high tide coming in and when tropical cyclones bring heavy rain as "
+        "the water creeps into the roads, something that didn't happen years ago.The villagers "
+        "have also come up with improvised vehicles such as the tipaklong, a long tricycle "
+        "with the engine raised higher up so it may traverse flood waters.Zaldy Abordo, a "
+        "resident of the barangay for the past 40 years, said it was not this way at all decades "
+        "ago. He said there were no floods only trees and plants. ",
+    url: "https://www.gmanetwork.com/news/topstories/nation/853947/gradual-sinking-of-barangay-in-bulacan-possible-caused-by-climate-change/story/",
+    img: "assets/img/Bulacan_34.jpg",
+    date: "December 8, 2022",
+    province: "Bulacan",
+  ),
+
+  NewsModel(
+    id: 1,
+    source: "CLTV36",
+    author: "Alexis Requerman",
+    title: "South Supermarket in San Fernando, Pampanga",
+    description: "On its 54th anniversary, South Supermarket is set to open its 11th "
+        "community store in Brgy. Sindalan, San Fernando, Pampanga on December 8, 2022. "
+        "Known to be “The Home of Good Food”, South Supermarket is privileged to open its "
+        "doors to the people who appreciate good food the most…the Kapampangans.",
+    url: "https://cltv36.tv/south-supermarket-in-san-fernando-pampanga/",
+    img: "assets/img/Pampanga_50.jpg",
+    date: " December 7, 2022",
+    province: "Pampanga",
+  ),
+
+  NewsModel(
+    id: 2,
+    source: "Brigada",
+    author: "BNFM Pampanga",
+    title: "Pamilya ng napaslang na dalawang pulis at PDEA agent, tatanggap ng tulong pinansyal mula sa Pampanga Provincial Government",
+    description: "Magbibigay ng tulong pinansyal ang Pampanga Provincial Peace and Order "
+        "Council sa sa pamilya ng napaslang na dalawang pulis at PDEA agent habang ginagampanan "
+        "ang tungkulin. Ayon kay Pampanga Governor Dennis Pineda na sya ring tumatayong chairman "
+        "ng Provincial Peace and Order Council at Provincial Anti-Drug Abuse Council, nasa tig-100 "
+        "thousand pesos ang ibibigay sa naiwang pamilya nina Police Staff Master Sergeant Sofronio "
+        "Capitle Jr. at Police Staff Sergeant Dominador Gacusa Jr, at ni PDEA agent Daniel Discaya.",
+    url: "https://brigadanews.ph/pamilya-ng-napaslang-na-dalawang-pulis-at-pdea-agent-tatanggap-ng-tulong-pinansyal-mula-sa-pampanga-provincial-government/",
+    img: "assets/img/Pampanga_31.jpg",
+    date: "December 7, 2022",
+    province: "Pampanga",
+  ),
+
+  NewsModel(
+    id: 3,
+    source: "Brigada",
+    author: "BNFM Pampanga",
+    title: "Lalawigan ng Nueva Ecija, nangunguna sa may pinaka-maraming mahihirap na pamilya sa Central Luzon",
+    description: "Nangunguna ang lalawigan ng Nueva Ecija sa may pinaka maraming mahirap "
+        "sa Central Luzon. Ito ay base sa Listahanan ng Department of Social Welfares and "
+        "Development o DSWD. Base sa datos, nasa 76, 691 ang bilang ng household na mahihirap "
+        "sa Nueva Ecija na sinundan ng Bulacan na may 47, 907 na mahihirap na household; 42, "
+        "159 household na mahihirap naman sa Tarlac; 40, 382  sa Zambales; 29, 241 sa Pampanga; "
+        "21, 945 sa Bataan; at 12, 131 sa Aurora. Samantala, sa mahigit 1.5 million na na-asses "
+        "ng DSWD sa Central Luzon, lumalabas na nasa 270, 456 ng bilang ng mga mahihirap na "
+        "pamilya sa rehiyon.",
+    url: "https://brigadanews.ph/lalawigan-ng-nueva-ecija-nangunguna-sa-may-pinakamaraming-mahihirap-na-pamilya-sa-central-luzon/",
+    img: "assets/img/Nueva Ecija_32.png",
+    date: "December 7, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NewsModel(
+    id: 13,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin Sports",
+    title: "Nueva Ecija nips Zamboanga, moves closer to MPBL crown",
+    description: "Nueva Ecija withstood Zamboanga Family’s Brand Sardines’ final assault "
+        "to prevail, 75-74, on Monday, Dec. 4, and move within a win of clinching the "
+        "OKbet-MPBL (Maharlika Pilipinas Basketball League) 4th Season Presented by Xtreme "
+        "at the Nueva Ecija Coliseum in Palayan City. Just when the Nueva Ecija Rice Vanguards "
+        "were cruising for home, 69-57, with only four minutes to go, the Zamboanguenos "
+        "unloaded an 11-point bomb and then drilled in two triples, courtesy of twins Jayvee "
+        "and Jaycee Marcelino, to make the game another thriller.",
+    url: "https://mb.com.ph/2022/12/06/nueva-ecija-nips-zamboanga-moves-closer-to-mpbl-crown/",
+    img: "assets/img/Nueva Ecija_42.jpg",
+    date: "December 6, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NewsModel(
+    id: 15,
+    source: "Manila Bulletin",
+    author: "Jun Marcos Tadios",
+    title: "DPWH improves road accessibility in Bataan to support local farmers",
+    description: "A 542.6-linear meter road in Hermosa, Bataan has been completed and "
+        "is now ready to serve local farmers easing the mobility of their goods and "
+        "local products, the Department of Public Works and Highways (DPWH) announced on "
+        "Tuesday, Dec. 6. Bataan 1st District Engineer Erlindo R. Flores, Jr. said the "
+        "concreting project with P4.9 million funding under the supervision of DPWH 1st "
+        "District Engineering Office (DEO).",
+    url: "https://mb.com.ph/2022/12/06/dpwh-improves-road-accessibility-in-bataan-to-support-local-farmers/",
+    img: "assets/img/Bataan_44.jpg",
+    date: " December 6, 2022",
+    province: "Bataan",
+  ),
+
+  NewsModel(
+    id: 14,
+    source: "Manila Bulletin",
+    author: "Ellson Quismorio",
+    title: "Bataan solon moves to start 2nd phase of agrarian reform program",
+    description: "Bataan 1st district Rep. Geraldine Roman is pushing for legislation that "
+        "would complete the Comprehensive Agrarian Reform Program (CARP) by facilitating its "
+        "second phase. House Bill (HB) No.223, which Roman filed, institutes the second phase "
+        "of the CARP, which includes the distribution of fully-subsidized agricultural lands "
+        "to qualified agrarian reform beneficiaries (ARBs).",
+    url: "https://mb.com.ph/2022/12/06/bataan-solon-moves-to-start-2nd-phase-of-agrarian-reform-program/",
+    img: "assets/img/Bataan_43.jpg",
+    date: " December 6, 2022",
+    province: "Bataan",
+  ),
+
+  NewsModel(
+    id: 11,
+    source: "Manila Bulletin",
+    author: "Liezle Basa Iñigo",
+    title: "58 law breakers arrested in weeklong anti-criminality operations in Tarlac",
+    description: "CAMP FRANCISCO S. MACABULOS, Tarlac City – The Tarlac Police apprehended "
+        "58 law breakers during their anti-criminality campaign in Tarlac Province from Nov. "
+        "28 to Dec. 4, 2022. Out of the 58 arrested, 32 were wanted persons (including two "
+        "provincial most wanted persons) for the crimes of rape, theft, qualified theft, "
+        "violations of special laws and municipal ordinance. Sixteen individuals were arrested "
+        "during anti-illegal drug operations resulting in the confiscation of a total of 57 "
+        "plastic sachets containing suspected shabu.",
+    url: "https://mb.com.ph/2022/12/06/58-law-breakers-arrested-in-weeklong-anti-criminality-operations-in-tarlac/",
+    img: "assets/img/Tarlac_40.jpg",
+    date: "December 6, 2022",
+    province: "Tarlac",
+  ),
+
+  NewsModel(
+    id: 8,
+    source: "GMA News Online",
+    author: "GMA Integrated News",
+    title: "2,000 students in Quezon, Nueva Ecija receive Noche Buena packs from GMA Kapuso Foundation",
+    description: "A total of 2,000 students from Quezon and Nueva Ecija received Noche Buena "
+        "packs from the GMA Kapuso Foundation. According to a report on 24 Oras, Monday, the "
+        "Give a Gift Alay sa Batang Pinoy Christmas Project visited the municipalities of General "
+        "Nakar and Gabaldon in the two provinces, which were affected by Typhoon Karding.",
+    url: "https://www.gmanetwork.com/news/topstories/regions/853581/2-000-students-in-quezon-nueva-ecija-receive-noche-buena-packs-from-gma-kapuso-foundation/story/",
+    img: "assets/img/Nueva Ecija_37.jpg",
+    date: "December 5, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NewsModel(
+    id: 7,
+    source: "GMA News Online",
+    author: "KBK, GMA Integrated News",
+    title: "Bata sa Bulacan, nalunod sa irigasyon matapos tangkaing kunin ang nahulog na tsinela",
+    description: "Isang bata sa San Rafael, Bulacan, ang nalunod sa irigasyon nang tangkain "
+        "niyang kunin ang nahulog niyang tsinelas, ayon sa ulat ng Unang Balita nitong Lunes. "
+        "Kinilala ang biktima na si Anthony Basquiña, 11 anyos, isang Grade 5 student. Ayon "
+        "sa lola ni Anthony na si Juanita Bagay, nagpunta sa nasabing irigasyon ang kaniyang "
+        "apo noong Sabado para manuod ng mga namimingwit ng isda.",
+    url: "https://www.gmanetwork.com/news/balitambayan/promdi/853506/bata-sa-bulacan-nalunod-sa-irigasyon-matapos-tangkaing-kunin-ang-nahulog-na-tsinelas/story/",
+    img: "assets/img/Bulacan_36.jpg",
+    date: "December 5, 2022",
+    province: "Bulacan",
+  ),
+
+  NewsModel(
+    id: 6,
+    source: "GMA News Online",
+    author: "JOVILAND RITA",
+    title: "10 illegal firecracker manufacturers, sellers apprehended in Bulacan –PNP",
+    description: "Around 10 illegal manufacturers, dealers, and retailers of firecrackers "
+        "have been apprehended so far in Bulacan, the Philippine National Police (PNP)-Firearms "
+        "and Explosives Office (FEO) said on Monday. In a press briefing, PNP-FEO acting chief "
+        "Police Colonel Paul Kenneth Lucas said PNP chief Police General Rodolfo Azurin Jr. ordered "
+        "operations against illegal firecrackers.",
+    url: "https://www.gmanetwork.com/news/topstories/nation/853549/10-illegal-firecracker-manufacturers-sellers-apprehended-in-bulacan-pnp/story/",
+    img: "assets/img/Bulacan_35.jpg",
+    date: "December 5, 2022",
+    province: "Bulacan",
+  ),
+
+  NewsModel(
     id: 12,
     source: "The Philippine Star",
     author: "Ric Sapnu and Emmanuel Tupas",
@@ -126,6 +470,23 @@ List<NewsModel> news = [
   ),
 
   NewsModel(
+    id: 16,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin",
+    title: "Vista Estates’ new micro-city in Bataan steers the focus onto living green",
+    description: "Vista Land, the country’s largest integrated property developer, "
+        "has been on the sustainability bandwagon for years. The company’s “sustainability” "
+        "mind-shift is not just a department with a set of programs, but a way of thinking, "
+        "operating, and more importantly––building. This green mindset is deeply integrated "
+        "into the masterplanning and development of a residential, business, and commercial "
+        "complex that makes full use of the advantages the province offers, in this case, Bataan.",
+    url: "https://mb.com.ph/2022/12/01/vista-estates-new-micro-city-in-bataan-steers-the-focus-onto-living-green/",
+    img: "assets/img/Bataan_45.jpg",
+    date: "December 1, 2022",
+    province: "Bataan",
+  ),
+
+  NewsModel(
     id: 11,
     source: "Pilipino Star Ngayon",
     author: "Omar Padilla",
@@ -145,8 +506,6 @@ List<NewsModel> news = [
     date: "December 1, 2022",
     province: "Bulacan",
   ),
-
-  //upper news are latest
 
   NewsModel(
     id: 58,
@@ -907,6 +1266,27 @@ List<NewsModel> news = [
     img: "assets/img/Tarlac_5.jpg",
     date: "November 11, 2022",
     province: "Tarlac",
+  ),
+
+  NewsModel(
+    id: 4,
+    source: "Balita",
+    author: "Balita Online",
+    title: "18 suspek sa ilegal na droga, iba pang krimen, nasakote ng pulis-Bulacan",
+    description: "Arestado din ang walo pang drug suspect sa magkakaibang anti-illegal "
+        "drug operations sa Calumpit, Obando, City of San Jose Del Monte (CSJDM), at "
+        "Sta. Maria noong Miyerkules, Nob 9. Narekober sa kanila ang kabuuang 37 sachet "
+        "ng shabu, drug paraphernalia, at buy-bust money. Siyam pang wanted sa batas ang "
+        "inaresto rin ng pulisya sa iba’t ibang manhunt operations sa Bustos, Norzagaray, "
+        "Plaridel, CSJDM, at Sta. Maria. Kinasuhan sila ng qualified theft, light threat, "
+        "estafa, theft, unjust vexation, slight physical injuries, attempted homicide, "
+        "reckless imprudence resulting in damage to property; at para sa paglabag sa RA "
+        "9003 (Ecological Solid Waste Management Act). Ang mga akusado ay kasalukuyang nasa "
+        "kustodiya ng arresting units o police stations.",
+    url: "https://balita.net.ph/2022/11/09/18-suspek-sa-ilegal-na-droga-iba-pang-krimen-nasakote-ng-pulis-bulacan/",
+    img: "assets/img/Bulacan_33.jpg",
+    date: "November 9, 2022",
+    province: "Bulacan",
   ),
 
   NewsModel(

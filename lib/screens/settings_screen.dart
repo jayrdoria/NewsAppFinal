@@ -1,10 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:newsapp/screens/about_app_screen.dart';
 import 'package:newsapp/screens/about_us_screen.dart';
+import 'package:newsapp/screens/splash_screens/logout_splash_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../model/user_model.dart';
 import 'login_screen.dart';
+import 'reset_password.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -45,7 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -57,11 +61,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Version: 1.0.0",
+                  Text("Version: 1.0.3",
                     style: TextStyle(
                       color: Colors.black54,
                       fontWeight: FontWeight.w500,
@@ -142,7 +146,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -191,7 +195,106 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    child: GestureDetector(
+                      onTap: ()async {
+                        String url = "https://drive.google.com/drive/folders/1yj8IIcAifPuL8S-zxl0VvQiC3fv3kBOq?usp=share_link";
+                          if(await canLaunch(url)) {
+                                await launch(url,);
+                          }else{
+                          throw "Cannot Launch";
+                           }
+                          },
+                      child: Container(
+                        height: 50,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.redAccent,
+                              spreadRadius: 1,
+                              blurRadius: 8,
+                              offset: Offset(4,4),
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: Offset(-4,-4),
+                            ),
+                          ],
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Update App",
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    ResetScreen()));
+                      },
+                      child: Container(
+                        height: 50,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.redAccent,
+                              spreadRadius: 1,
+                              blurRadius: 8,
+                              offset: Offset(4,4),
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: Offset(-4,-4),
+                            ),
+                          ],
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Reset Password",
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -245,6 +348,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> logout(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
     Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LoginScreen()));
+        MaterialPageRoute(builder: (context) => LogOutSplashScreen()));
   }
 }

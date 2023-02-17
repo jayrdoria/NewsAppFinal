@@ -18,6 +18,92 @@ class NuevaEcijaNewsModel{
 List<NuevaEcijaNewsModel> nuevaecijanews = [
 
   NuevaEcijaNewsModel(
+    id: 6,
+    source: "Philippine Star",
+    author: "The Philippine Star",
+    title: "Wilcon Depot opens third Nueva Ecija store",
+    description: "MANILA, Philippines — Wilcon Depot, the top home improvement and building "
+        "supplies retailer in the Philippines, continues to expand its physical store presence "
+        "nationwide and successfully launched its 82nd store in San Jose, Nueva Ecija last Dec. 9. "
+        "The one-stop-shop is located in Zone 1, Barangay Manicla, San Jose City, Nueva Ecija.",
+    url: "https://www.philstar.com/headlines/2022/12/11/2229991/wilcon-depot-opens-third-nueva-ecija-store",
+    img: "assets/img/Nueva Ecija_55.jpg",
+    date: "December 11, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NuevaEcijaNewsModel(
+    id: 12,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin Sports",
+    title: "Nueva Ecija seeks title sweep over Zamboanga in Game 3",
+    description: "Nueva Ecija seeks a sweep as Zamboanga Family’s Brand Sardines fights "
+        "for life in Game 3 of the OKbet-MPBL (Maharlika Pilipinas Basketball League) 4th "
+        "Season Presented by Xtreme National Finals on Friday, Dec. 9, at the Mayor Vitaliano "
+        "Agan Coliseum in Zamboanga City. The Nueva Ecija Rice Vanguards thwarted the Zamboanguenos, "
+        "81-75, in Game 1, and 75-74 in Game 2, both at the Nueva Ecija Coliseum, to move within "
+        "a win of completing a brilliant run that saw them sweep the elimination round and capture "
+        "the North division title. Zamboanga, however, has proven to be no pushover and is sure "
+        "to pour everything to give joy to the hometown crowd.",
+    url: "https://mb.com.ph/2022/12/08/nueva-ecija-seeks-title-sweep-over-zamboanga-in-game-3/",
+    img: "assets/img/Nueva Ecija_41.jpg",
+    date: " December 8, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NuevaEcijaNewsModel(
+    id: 3,
+    source: "Brigada",
+    author: "BNFM Pampanga",
+    title: "Lalawigan ng Nueva Ecija, nangunguna sa may pinaka-maraming mahihirap na pamilya sa Central Luzon",
+    description: "Nangunguna ang lalawigan ng Nueva Ecija sa may pinaka maraming mahirap "
+        "sa Central Luzon. Ito ay base sa Listahanan ng Department of Social Welfares and "
+        "Development o DSWD. Base sa datos, nasa 76, 691 ang bilang ng household na mahihirap "
+        "sa Nueva Ecija na sinundan ng Bulacan na may 47, 907 na mahihirap na household; 42, "
+        "159 household na mahihirap naman sa Tarlac; 40, 382  sa Zambales; 29, 241 sa Pampanga; "
+        "21, 945 sa Bataan; at 12, 131 sa Aurora. Samantala, sa mahigit 1.5 million na na-asses "
+        "ng DSWD sa Central Luzon, lumalabas na nasa 270, 456 ng bilang ng mga mahihirap na "
+        "pamilya sa rehiyon.",
+    url: "https://brigadanews.ph/lalawigan-ng-nueva-ecija-nangunguna-sa-may-pinakamaraming-mahihirap-na-pamilya-sa-central-luzon/",
+    img: "assets/img/Nueva Ecija_32.png",
+    date: "December 7, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NuevaEcijaNewsModel(
+    id: 13,
+    source: "Manila Bulletin",
+    author: "Manila Bulletin Sports",
+    title: "Nueva Ecija nips Zamboanga, moves closer to MPBL crown",
+    description: "Nueva Ecija withstood Zamboanga Family’s Brand Sardines’ final assault "
+        "to prevail, 75-74, on Monday, Dec. 4, and move within a win of clinching the "
+        "OKbet-MPBL (Maharlika Pilipinas Basketball League) 4th Season Presented by Xtreme "
+        "at the Nueva Ecija Coliseum in Palayan City. Just when the Nueva Ecija Rice Vanguards "
+        "were cruising for home, 69-57, with only four minutes to go, the Zamboanguenos "
+        "unloaded an 11-point bomb and then drilled in two triples, courtesy of twins Jayvee "
+        "and Jaycee Marcelino, to make the game another thriller.",
+    url: "https://mb.com.ph/2022/12/06/nueva-ecija-nips-zamboanga-moves-closer-to-mpbl-crown/",
+    img: "assets/img/Nueva Ecija_42.jpg",
+    date: "December 6, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NuevaEcijaNewsModel(
+    id: 8,
+    source: "GMA News Online",
+    author: "GMA Integrated News",
+    title: "2,000 students in Quezon, Nueva Ecija receive Noche Buena packs from GMA Kapuso Foundation",
+    description: "A total of 2,000 students from Quezon and Nueva Ecija received Noche Buena "
+        "packs from the GMA Kapuso Foundation. According to a report on 24 Oras, Monday, the "
+        "Give a Gift Alay sa Batang Pinoy Christmas Project visited the municipalities of General "
+        "Nakar and Gabaldon in the two provinces, which were affected by Typhoon Karding.",
+    url: "https://www.gmanetwork.com/news/topstories/regions/853581/2-000-students-in-quezon-nueva-ecija-receive-noche-buena-packs-from-gma-kapuso-foundation/story/",
+    img: "assets/img/Nueva Ecija_37.jpg",
+    date: "December 5, 2022",
+    province: "Nueva Ecija",
+  ),
+
+  NuevaEcijaNewsModel(
     id: 25,
     source: "Business Mirror",
     author: "Anonymous",

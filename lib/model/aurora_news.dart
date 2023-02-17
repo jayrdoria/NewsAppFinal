@@ -18,6 +18,23 @@ class AuroraNewsModel{
 List<AuroraNewsModel> auroranews = [
 
   AuroraNewsModel(
+    id: 2,
+    source: "GMA News Online",
+    author: "GMA Integrated News",
+    title: "Rosal traverses Philippine Sea, may bring heavy rains over Mimaropa",
+    description: "Tropical Depression Rosal continued traversing the Philippine Sea east of "
+        "Aurora on Sunday, maintaining its strength, and may bring light to moderate with at "
+        "times heavy rains over Mimaropa until noon, PAGASA said in its bulletin. Flooding and "
+        "rain-induced landslides are still possible in some areas, especially in areas that are "
+        "highly or very highly susceptible to these hazard as identified in hazard maps and in "
+        "localities with significant antecedent rainfall, the weather bureau said.",
+    url: "https://www.gmanetwork.com/news/scitech/weather/854131/rosal-traverses-philippine-sea-may-bring-heavy-rains-over-mimaropa/story/",
+    img: "assets/img/Aurora_51.jpg",
+    date: "December 11, 2022",
+    province: "Aurora",
+  ),
+
+  AuroraNewsModel(
     id: 44,
     source: "INQUIRRER.NET",
     author: "John Eric Mendoza",

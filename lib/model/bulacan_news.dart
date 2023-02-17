@@ -18,6 +18,58 @@ class BulacanNewsModel{
 List<BulacanNewsModel> bulacannews = [
 
   BulacanNewsModel(
+    id: 5,
+    source: "Gma News Online",
+    author: "GMA Integrated News",
+    title: "Gradual sinking of barangay in Bulacan possibly caused by climate change",
+    description: "Barangay Taliptip in Bulakan, Bulacan may be providing a preview of things "
+        "to come in other coastal areas in the country including Manila due to climate change. "
+        "According to Joseph Morong’s special report on “24 Oras”, residents in the barangay "
+        "are wary of the high tide coming in and when tropical cyclones bring heavy rain as "
+        "the water creeps into the roads, something that didn't happen years ago.The villagers "
+        "have also come up with improvised vehicles such as the tipaklong, a long tricycle "
+        "with the engine raised higher up so it may traverse flood waters.Zaldy Abordo, a "
+        "resident of the barangay for the past 40 years, said it was not this way at all decades "
+        "ago. He said there were no floods only trees and plants. ",
+    url: "https://www.gmanetwork.com/news/topstories/nation/853947/gradual-sinking-of-barangay-in-bulacan-possible-caused-by-climate-change/story/",
+    img: "assets/img/Bulacan_34.jpg",
+    date: "December 8, 2022",
+    province: "Bulacan",
+  ),
+
+  BulacanNewsModel(
+    id: 7,
+    source: "GMA News Online",
+    author: "KBK, GMA Integrated News",
+    title: "Bata sa Bulacan, nalunod sa irigasyon matapos tangkaing kunin ang nahulog na tsinela",
+    description: "Isang bata sa San Rafael, Bulacan, ang nalunod sa irigasyon nang tangkain "
+        "niyang kunin ang nahulog niyang tsinelas, ayon sa ulat ng Unang Balita nitong Lunes. "
+        "Kinilala ang biktima na si Anthony Basquiña, 11 anyos, isang Grade 5 student. Ayon "
+        "sa lola ni Anthony na si Juanita Bagay, nagpunta sa nasabing irigasyon ang kaniyang "
+        "apo noong Sabado para manuod ng mga namimingwit ng isda.",
+    url: "https://www.gmanetwork.com/news/balitambayan/promdi/853506/bata-sa-bulacan-nalunod-sa-irigasyon-matapos-tangkaing-kunin-ang-nahulog-na-tsinelas/story/",
+    img: "assets/img/Bulacan_36.jpg",
+    date: "December 5, 2022",
+    province: "Bulacan",
+  ),
+
+  BulacanNewsModel(
+    id: 6,
+    source: "GMA News Online",
+    author: "JOVILAND RITA",
+    title: "10 illegal firecracker manufacturers, sellers apprehended in Bulacan –PNP",
+    description: "Around 10 illegal manufacturers, dealers, and retailers of firecrackers "
+        "have been apprehended so far in Bulacan, the Philippine National Police (PNP)-Firearms "
+        "and Explosives Office (FEO) said on Monday. In a press briefing, PNP-FEO acting chief "
+        "Police Colonel Paul Kenneth Lucas said PNP chief Police General Rodolfo Azurin Jr. ordered "
+        "operations against illegal firecrackers.",
+    url: "https://www.gmanetwork.com/news/topstories/nation/853549/10-illegal-firecracker-manufacturers-sellers-apprehended-in-bulacan-pnp/story/",
+    img: "assets/img/Bulacan_35.jpg",
+    date: "December 5, 2022",
+    province: "Bulacan",
+  ),
+
+  BulacanNewsModel(
     id: 12,
     source: "The Philippine Star",
     author: "Ric Sapnu",
@@ -223,6 +275,27 @@ List<BulacanNewsModel> bulacannews = [
     url: "https://punto.com.ph/suplay-ng-balat-karne-ng-baboy-tiniyak-sa-mga-chicharon-makers-sa-bulacan/",
     img: "assets/img/Bulacan_3.jpg",
     date: "November 13, 2022",
+    province: "Bulacan",
+  ),
+
+  BulacanNewsModel(
+    id: 4,
+    source: "Balita",
+    author: "Balita Online",
+    title: "18 suspek sa ilegal na droga, iba pang krimen, nasakote ng pulis-Bulacan",
+    description: "Arestado din ang walo pang drug suspect sa magkakaibang anti-illegal "
+        "drug operations sa Calumpit, Obando, City of San Jose Del Monte (CSJDM), at "
+        "Sta. Maria noong Miyerkules, Nob 9. Narekober sa kanila ang kabuuang 37 sachet "
+        "ng shabu, drug paraphernalia, at buy-bust money. Siyam pang wanted sa batas ang "
+        "inaresto rin ng pulisya sa iba’t ibang manhunt operations sa Bustos, Norzagaray, "
+        "Plaridel, CSJDM, at Sta. Maria. Kinasuhan sila ng qualified theft, light threat, "
+        "estafa, theft, unjust vexation, slight physical injuries, attempted homicide, "
+        "reckless imprudence resulting in damage to property; at para sa paglabag sa RA "
+        "9003 (Ecological Solid Waste Management Act). Ang mga akusado ay kasalukuyang nasa "
+        "kustodiya ng arresting units o police stations.",
+    url: "https://balita.net.ph/2022/11/09/18-suspek-sa-ilegal-na-droga-iba-pang-krimen-nasakote-ng-pulis-bulacan/",
+    img: "assets/img/Bulacan_33.jpg",
+    date: "November 9, 2022",
     province: "Bulacan",
   ),
 

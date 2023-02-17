@@ -18,6 +18,74 @@ class PampangaNewsModel{
 List<PampangaNewsModel> pampanganews = [
 
   PampangaNewsModel(
+    id: 1,
+    source: "SunStar Pampanga",
+    author: "CHARLENE A. CAYABYAB",
+    title: "CIAC to oversee Clark airport operations",
+    description: "CLARK FREEPORT The Department of Transportation (DOTR) recently tasked "
+        "the Clark International Airport Corporation (CIAC) to exercise oversight functions "
+        "of the privately-run Clark International Airport. This was revealed by CIAC officer-in-charge "
+        "Darwin Cunanan citing a directive from Transportation Secretary Jaime Bautista "
+        "dated November 7, 2022. As its implementing arm, DOTR is ordering CIAC to exercise "
+        "“regulatory supervision and oversight of activities occurring within the Clark Civil "
+        "Aviation Complex, including CRK.” CRK is the code used by the International Air Transport "
+        "Association for the Clark International Airport. Bautista’s directive to Cunanan was "
+        "also sent to Chairman Delfin Lorenzana and President Aileen Zosa of the Bases Conversion "
+        "and Development Authority, CIAC’s parent company.",
+    url: "https://www.sunstar.com.ph/article/1948085/pampanga/local-news/ciac-to-oversee-clark-airport-operations",
+    img: "assets/img/Pampanga_30.jpg",
+    date: "December 09, 2022",
+    province: "Pampanga",
+  ),
+
+  PampangaNewsModel(
+    id: 9,
+    source: "INQUIRER.NET",
+    author: " Tonette Orejas",
+    title: "Pampanga governor is Converge FiberXer’s new team manager",
+    description: "CITY OF SAN FERNANDO—Pampanga Gov. Dennis Pineda has confirmed that "
+        "he has accepted to help Converge FiberXers as team manager for the third conference "
+        "of the Philippine Basketball Association’s (PBA) 47th season. Pineda assured that his "
+        "official duties as Pampanga governor would not be affected, attributing that to his disciplined ways.",
+    url: "https://sports.inquirer.net/489281/pampanga-governor-is-converge-fiberxers-new-team-manager",
+    img: "assets/img/Pampanga_38.jpg",
+    date: "December 08, 2022",
+    province: "Pampanga",
+  ),
+
+  PampangaNewsModel(
+    id: 1,
+    source: "CLTV36",
+    author: "Alexis Requerman",
+    title: "South Supermarket in San Fernando, Pampanga",
+    description: "On its 54th anniversary, South Supermarket is set to open its 11th "
+        "community store in Brgy. Sindalan, San Fernando, Pampanga on December 8, 2022. "
+        "Known to be “The Home of Good Food”, South Supermarket is privileged to open its "
+        "doors to the people who appreciate good food the most…the Kapampangans.",
+    url: "https://cltv36.tv/south-supermarket-in-san-fernando-pampanga/",
+    img: "assets/img/Pampanga_50.jpg",
+    date: " December 7, 2022",
+    province: "Pampanga",
+  ),
+
+  PampangaNewsModel(
+    id: 2,
+    source: "Brigada",
+    author: "BNFM Pampanga",
+    title: "Pamilya ng napaslang na dalawang pulis at PDEA agent, tatanggap ng tulong pinansyal mula sa Pampanga Provincial Government",
+    description: "Magbibigay ng tulong pinansyal ang Pampanga Provincial Peace and Order "
+        "Council sa sa pamilya ng napaslang na dalawang pulis at PDEA agent habang ginagampanan "
+        "ang tungkulin. Ayon kay Pampanga Governor Dennis Pineda na sya ring tumatayong chairman "
+        "ng Provincial Peace and Order Council at Provincial Anti-Drug Abuse Council, nasa tig-100 "
+        "thousand pesos ang ibibigay sa naiwang pamilya nina Police Staff Master Sergeant Sofronio "
+        "Capitle Jr. at Police Staff Sergeant Dominador Gacusa Jr, at ni PDEA agent Daniel Discaya.",
+    url: "https://brigadanews.ph/pamilya-ng-napaslang-na-dalawang-pulis-at-pdea-agent-tatanggap-ng-tulong-pinansyal-mula-sa-pampanga-provincial-government/",
+    img: "assets/img/Pampanga_31.jpg",
+    date: "December 7, 2022",
+    province: "Pampanga",
+  ),
+
+  PampangaNewsModel(
     id: 12,
     source: "The Philippine Star",
     author: "Ric Sapnu and Emmanuel Tupas",

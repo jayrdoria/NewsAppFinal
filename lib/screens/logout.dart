@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:newsapp/screens/splash_screens/logout_splash_screen.dart';
 import '../model/user_model.dart';
-import 'login_screen.dart';
 
 class Logout extends StatefulWidget {
   const Logout({Key? key}) : super(key: key);
@@ -79,6 +79,6 @@ class _LogoutState extends State<Logout> {
   Future<void> logout(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
     Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LoginScreen()));
+        MaterialPageRoute(builder: (context) => LogOutSplashScreen()));
   }
 }
